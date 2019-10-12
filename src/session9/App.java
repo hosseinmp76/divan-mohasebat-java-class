@@ -8,6 +8,12 @@ public class App {
 
 		Scanner input = new Scanner(System.in);
 
+		int numberOfAnimals;
+
+		numberOfAnimals = input.nextInt();
+
+		Animal[] ar = new Animal[numberOfAnimals];
+
 		Zoo[] zs = new Zoo[10];
 		for (int i = 0; i < numberOfAnimals; i++) {
 			String name = input.next();
@@ -26,14 +32,8 @@ public class App {
 			zs[i].name = input.next();
 			Worker man = new Worker();
 			man.name = input.next();
-			zs[i].setManager(man);
+//			zs[i].setManager(man);
 		}
-
-		int numberOfAnimals;
-
-		numberOfAnimals = input.nextInt();
-
-		Animal[] ar = new Animal[numberOfAnimals];
 
 		for (int i = 0; i < numberOfAnimals; i++) {
 			String name = input.next();

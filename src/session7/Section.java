@@ -3,7 +3,9 @@ package session7;
 public class Section {
 	String vahedName;
 
-	int numberOfKarmands;
+	Karmand man;
+
+	public int numberOfKarmands;
 	Karmand[] karmsnds;
 
 	public int hoghogh() {

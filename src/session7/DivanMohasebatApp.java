@@ -6,6 +6,7 @@ public class DivanMohasebatApp {
 		// TODO Auto-generated method stub
 		Company co = new Company();
 		co.coName = "divan";
+
 		int sectionsNumber = 4;
 		co.vahedha = new Section[sectionsNumber];
 		Section s1 = new Section();
@@ -17,6 +18,11 @@ public class DivanMohasebatApp {
 		Karmand k1, k2;
 		k1 = new Karmand();
 		k1.familyName = "a";
+
+		k1.hour = 55;
+		k1.monryPerHour = 5;
+		k1.hoghogh();
+		k1.ghest();
 
 		k2 = new Karmand();
 		k2.familyName = "a";

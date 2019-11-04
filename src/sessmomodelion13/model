@@ -1,0 +1,16 @@
+Human
+	Emplyee
+	Customer
+Car
+	Samand
+	Periad
+Animal
+	Cat
+	Dog
+
+
+Moveable
+EatAble
+DieAble
+SleepAble
+WorkAble

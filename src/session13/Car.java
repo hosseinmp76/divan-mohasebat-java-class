@@ -8,4 +8,10 @@ public class Car implements Moveable {
 
 	}
 
+	@Override
+	public void f() {
+		// TODO Auto-generated method stub
+
+	}
+
 }

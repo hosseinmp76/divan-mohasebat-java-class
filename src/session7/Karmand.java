@@ -5,7 +5,7 @@ public class Karmand {
 	String familyName;
 
 	int money;
-	private int hour;
+	int hour;
 	public int monryPerHour;
 
 	private void f() {
@@ -14,7 +14,7 @@ public class Karmand {
 	}
 
 	// method
-	private void ghest(int v) {
+	void ghest(int v) {
 		this.money = this.money - v;
 	}
 

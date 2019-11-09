@@ -1,5 +1,8 @@
 package session14;
 
+import java.util.ArrayList;
+import java.util.List;
+
 public class Hall {
 	int ID;
 	String hallName;
@@ -12,10 +15,12 @@ public class Hall {
 		this.ID = population;
 		Hall.population++;
 		String s = "" + 9;
-		9 + 5;
-		"f" + "t";
-		
-		9.2 + 4;
+//		9 + 5;
+//		"f" + "t";
+//		
+//		9.2 + 4;
+//		List<E>
+		ArrayList<Integer> ar;
 	}
 
 }

@@ -22,7 +22,7 @@ public class DivanMohasebatApp {
 		k1.hour = 55;
 		k1.monryPerHour = 5;
 		k1.hoghogh();
-		k1.ghest();
+		k1.ghest(4);
 
 		k2 = new Karmand();
 		k2.familyName = "a";

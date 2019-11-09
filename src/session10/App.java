@@ -11,10 +11,10 @@ public class App {
 		System.out.println(c1.Area());
 
 		Point p1 = new Point(3, 4);
-		Circle c2 = new Circle(p1, 5);
-		System.out.println(c2.Area());
+//		Circle c2 = new Circle(p1, 5);
+//		System.out.println(c2.Area());
 
-		Triangle t1 = new Triangle();
+		Triangle t1 = new Triangle("red");
 		try {
 			System.out.println(t1.Area());
 		} catch (Exception rrrrrrr) {

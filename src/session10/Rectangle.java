@@ -5,11 +5,13 @@ public class Rectangle extends Shape {
 	Point lu, rd;
 
 	public Rectangle(Point lu2, Point rd2) {
+		super("red");
 		this.lu = lu2;
 		this.rd = rd2;
 	}
 
 	public Rectangle(double lux, double luy, double rdx, double rdy) {
+		super("red");
 		this.lu = new Point(lux, luy);
 		this.rd = new Point(rdx, rdy);
 	}

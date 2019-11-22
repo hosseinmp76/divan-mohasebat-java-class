@@ -1,14 +1,37 @@
 package session15;
 
+import java.util.Date;
+
 public class Post {
 
-	String hallName, userName, discussionName;
+	String hallName, message;
+	int discussionID;
 
-	public Post(String hallName, String userName, String discussionName) {
+	private static int population = 0;
+	User sender;
+
+	int ID;
+
+	public Post(String hallName, int discussionID, String message, User sender, int replyPostID) {
 		super();
 		this.hallName = hallName;
-		this.userName = userName;
-		this.discussionName = discussionName;
+		this.discussionID = discussionID;
+		this.message = message;
+		this.sender = sender;
+		this.replyPostID = replyPostID;
+		this.ID = population++;
+		this.sendDate = new Date(System.currentTimeMillis());
+	}
+
+	Date sendDate;
+	int replyPostID;
+
+	public int getReplyPostID() {
+		return replyPostID;
+	}
+
+	public void setReplyPostID(int replyPostID) {
+		this.replyPostID = replyPostID;
 	}
 
 	public String getHallName() {
@@ -17,22 +40,6 @@ public class Post {
 
 	public void setHallName(String hallName) {
 		this.hallName = hallName;
-	}
-
-	public String getUserName() {
-		return userName;
-	}
-
-	public void setUserName(String userName) {
-		this.userName = userName;
-	}
-
-	public String getDiscussionName() {
-		return discussionName;
-	}
-
-	public void setDiscussionName(String discussionName) {
-		this.discussionName = discussionName;
 	}
 
 }

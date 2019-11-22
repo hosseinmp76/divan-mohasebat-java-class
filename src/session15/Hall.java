@@ -28,15 +28,19 @@ public class Hall {
 	public Hall(String hallName) {
 		this.hallID = population;
 		population++;
+		this.name = hallName;
 		discussions = new ArrayList<Discussion>();
 	}
 
-	public Discussion getDiscussion(String discussionName) {
+	public Discussion getDiscussion(int discussionID) {
 		for (int i = 0; i < this.discussions.size(); i++) {
-			if (this.discussions.get(i).getName().equals(discussionName))
+			if (this.discussions.get(i).getiD() == discussionID)
 				return this.discussions.get(i);
 		}
-		throw new RuntimeException();
+		throw new RuntimeException("no such Discussion in hall " + this.getName());
 	}
 
+	public void newDiscussion(Discussion d) {
+		this.discussions.add(d);
+	}
 }
